@@ -1,0 +1,14 @@
+{
+  "name": "qna3-sol-checkin",
+  "version": "1.0.0",
+  "description": "qna3-sol-checkin",
+  "main": "Qna3SolCheckIn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiaobo",
+  "license": "ISC",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0"
+  }
+}

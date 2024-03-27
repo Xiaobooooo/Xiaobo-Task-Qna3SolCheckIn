@@ -1,0 +1,57 @@
+{
+  "version": "0.1.5",
+  "name": "daily_check_in",
+  "instructions": [
+    {
+      "name": "checkin",
+      "accounts": [
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "checkInAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "user",
+          "type": "publicKey"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "CheckInAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "lastCheckIn",
+            "type": "i64"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "AlreadyCheckedIn",
+      "msg": "You have already checked in today."
+    }
+  ],
+  "metadata": {
+    "address": "G3qf2wmWSurK5S3f7HaenmNNsoiZQY41i9d3kboHURZC"
+  }
+}
+      
