@@ -9,6 +9,8 @@
   "author": "xiaobo",
   "license": "ISC",
   "dependencies": {
-    "@coral-xyz/anchor": "^0.29.0"
+    "@coral-xyz/anchor": "^0.29.0",
+    "axios": "^1.6.8",
+    "tweetnacl": "^1.0.3"
   }
 }
